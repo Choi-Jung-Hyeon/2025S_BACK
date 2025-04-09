@@ -1,0 +1,7 @@
+{
+  "name": "restaurant-api",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
