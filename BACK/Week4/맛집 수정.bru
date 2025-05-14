@@ -1,0 +1,23 @@
+meta {
+  name: 맛집 수정
+  type: http
+  seq: 6
+}
+
+patch {
+  url: http://localhost:3000/api/restaurants/봉수육
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "name": "봉수육",
+    "address": "경기 수원시 장안구 율전로108번길 11 2층",
+    "phone": "0507-1460-0903"
+  }
+}

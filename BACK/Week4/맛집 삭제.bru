@@ -1,0 +1,15 @@
+meta {
+  name: 맛집 삭제
+  type: http
+  seq: 5
+}
+
+delete {
+  url: http://localhost:3000/api/restaurants/봉수육
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+}

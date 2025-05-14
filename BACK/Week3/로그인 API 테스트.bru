@@ -1,0 +1,22 @@
+meta {
+  name: 로그인 API 테스트
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:3000/api/login
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "username": "testuser",
+    "password": "123456"
+  }
+}
